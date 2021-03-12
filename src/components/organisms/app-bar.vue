@@ -22,25 +22,26 @@
 
     <v-spacer></v-spacer>
 
-    <v-btn
-      href="https://github.com/vuetifyjs/vuetify/releases/latest"
-      target="_blank"
-      text
-    >
-      <span class="mr-2">Latest Release</span>
-      <v-icon>mdi-open-in-new</v-icon>
-    </v-btn>
+    <custom-btn-group :content="content" />
   </v-app-bar>
 </template>
 
 <script>
+import { CustomBtnGroup } from "../molecules";
+
 export default {
   name: "AppBar",
 
-  components: {},
+  components: {
+    CustomBtnGroup,
+  },
 
   data: () => ({
-    //
+    content: {
+      path: "https://www.toolio.com/",
+      title: "Visit the actual page",
+      icon: "mdi-open-in-new",
+    },
   }),
 };
 </script>
