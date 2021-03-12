@@ -1,3 +1,3 @@
 import CustomBtnGroup from "./custom-btn-group.vue";
-
-export { CustomBtnGroup };
+import LogoGroup from "./logo-group.vue";
+export { CustomBtnGroup, LogoGroup };

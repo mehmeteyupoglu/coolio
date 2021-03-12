@@ -1,46 +1,36 @@
 <template>
-  <v-app-bar app color="primary" dark>
-    <div class="d-flex align-center">
-      <v-img
-        alt="Vuetify Logo"
-        class="shrink mr-2"
-        contain
-        src="https://cdn.vuetifyjs.com/images/logos/vuetify-logo-dark.png"
-        transition="scale-transition"
-        width="40"
-      />
-
-      <v-img
-        alt="Vuetify Name"
-        class="shrink mt-1 hidden-sm-and-down"
-        contain
-        min-width="100"
-        src="https://cdn.vuetifyjs.com/images/logos/vuetify-name-dark.png"
-        width="100"
-      />
-    </div>
+  <v-app-bar app color="blue darken-4" dark>
+    <!-- Logo -->
+    <logo-group :content="logoContent" />
 
     <v-spacer></v-spacer>
 
+    <!-- Button Group -->
     <custom-btn-group :content="content" />
   </v-app-bar>
 </template>
 
 <script>
-import { CustomBtnGroup } from "../molecules";
+import { CustomBtnGroup, LogoGroup } from "../molecules";
 
 export default {
   name: "AppBar",
 
   components: {
     CustomBtnGroup,
+    LogoGroup,
   },
 
   data: () => ({
     content: {
-      path: "https://www.toolio.com/",
+      path: "https://www.toolio.com",
       title: "Visit the actual page",
       icon: "mdi-open-in-new",
+    },
+    logoContent: {
+      title: "Coolio",
+      src:
+        "https://uploads-ssl.webflow.com/5d7ab80fa9740ce01c57ee9d/5f2978019586604c1c53aa87_toolio-icon-64.svg",
     },
   }),
 };
