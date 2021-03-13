@@ -1,6 +1,6 @@
 <template>
   <v-app-bar app color="blue darken-4" dark>
-    <!-- Logo -->
+    <!-- Logo Group-->
     <logo-group :content="logoContent" />
 
     <v-spacer></v-spacer>
@@ -22,11 +22,14 @@ export default {
   },
 
   data: () => ({
+    // content for btn-group
     content: {
       path: "https://www.toolio.com",
       title: "Visit the actual page",
       icon: "mdi-open-in-new",
     },
+
+    // content for logo-group
     logoContent: {
       title: "Coolio",
       src:
