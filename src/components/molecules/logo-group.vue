@@ -16,16 +16,35 @@
 </template>
 
 <script>
+/**
+ * A @component that produces a logo group
+ * accepts a content object as props
+ * @example <logo-group :content="logoContent" />
+ */
+
 export default {
   name: "LogoGroup",
+
+  /**
+   * The content that helps customize logo-group
+   * @property: src, title
+   */
   props: {
-    content: Object,
+    content: {
+      type: Object,
+      default() {
+        return {
+          src:
+            "https://uploads-ssl.webflow.com/5d7ab80fa9740ce01c57ee9d/5f2978019586604c1c53aa87_toolio-icon-64.svg",
+
+          title: "Toolio",
+        };
+      },
+    },
   },
 
   components: {},
 
-  data: () => ({
-    //
-  }),
+  data: () => ({}),
 };
 </script>
