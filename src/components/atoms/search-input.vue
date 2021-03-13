@@ -1,16 +1,17 @@
 <template>
-  <v-row justify="center">
-    <v-col cols="12" sm="6" md="3">
-      <v-text-field
-        v-model="item"
-        label="Enter a keyword such as awesome"
-        solo
-        clearable
-        filled
-      ></v-text-field>
-    </v-col>
-    {{ item }}
-  </v-row>
+  <div>
+    <v-row justify="center">
+      <v-col cols="12" sm="6" md="3">
+        <v-text-field
+          v-model="title"
+          label="Enter a keyword such as awesome"
+          solo
+          clearable
+          filled
+        ></v-text-field>
+      </v-col>
+    </v-row>
+  </div>
 </template>
 
 <script>
@@ -24,8 +25,21 @@
 export default {
   name: "SearchInput",
 
-  data: () => ({
-    item: "",
-  }),
+  data: () => ({}),
+  computed: {
+    title: {
+      set(value) {
+        this.$store.commit("setTitle", value);
+      },
+      get() {
+        return this.$store.getters.getTitle;
+      },
+    },
+  },
+  watch: {
+    title() {
+      this.$store.dispatch("loadProducts");
+    },
+  },
 };
 </script>
