@@ -3,7 +3,7 @@
     <v-row class="text-center align-items-center mt-2">
       <v-col class="mt-10 mb-4">
         <h3 class="button font-weight-bold mb-1">
-          Search for thousands of items...
+          Search for hundreds of items...
         </h3>
       </v-col>
       <v-col class="mb-2" cols="12">
