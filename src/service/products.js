@@ -1,6 +1,6 @@
 import { Request } from "../utils";
 
-const prefix = "products";
+const prefix = "products?title_like=";
 
 export const getProductList = (query) => {
   // TODO: add query later on
