@@ -6,16 +6,33 @@
 </template>
 
 <script>
+/**
+ * A @component that produces a button group
+ * accepts a content object as props
+ * @example <custom-btn-group :content="content" />
+ */
+
 export default {
   name: "CustomBtnGroup",
   props: {
-    content: Object,
+    /**
+     * The content that helps customize btn-group
+     * @property: path, title, icon
+     */
+    content: {
+      type: Object,
+      default() {
+        return {
+          path: "/",
+          title: "Check out",
+          icon: "mdi-open-in-new",
+        };
+      },
+    },
   },
 
   components: {},
 
-  data: () => ({
-    //
-  }),
+  data: () => ({}),
 };
 </script>
