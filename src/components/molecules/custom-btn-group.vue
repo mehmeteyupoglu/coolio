@@ -9,7 +9,7 @@
 /**
  * A @component that produces a button group
  * accepts a content object as props
- * @example <custom-btn-group :content="content" />
+ * @example <custom-btn-group :content="content"></custom-btn-group>
  */
 
 export default {
