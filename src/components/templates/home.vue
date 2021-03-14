@@ -8,12 +8,26 @@
       </v-col>
       <v-col class="mb-2" cols="12">
         <search-input />
+        <v-progress-circular
+          v-if="loading"
+          :width="1"
+          color="primary"
+        ></v-progress-circular>
       </v-col>
     </v-row>
   </v-container>
 </template>
 
 <script>
+/**
+ * Harbors searching product activity
+ * @component
+ */
+
+// import packages
+import { mapGetters } from "vuex";
+
+// import local files
 import { SearchInput } from "../atoms";
 
 export default {
@@ -23,5 +37,8 @@ export default {
   name: "Home",
 
   data: () => ({}),
+  computed: {
+    ...mapGetters({ loading: "getLoadingState" }),
+  },
 };
 </script>
