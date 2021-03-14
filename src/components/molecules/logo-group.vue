@@ -36,14 +36,11 @@ export default {
         return {
           src:
             "https://uploads-ssl.webflow.com/5d7ab80fa9740ce01c57ee9d/5f2978019586604c1c53aa87_toolio-icon-64.svg",
-
           title: "Toolio",
         };
       },
     },
   },
-
-  components: {},
 
   data: () => ({}),
 };
