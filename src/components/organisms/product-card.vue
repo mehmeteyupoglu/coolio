@@ -4,13 +4,7 @@
 
     <v-card-title>{{ item.title }}</v-card-title>
 
-    <v-card-text>
-      <v-row align="center" class="mx-0">
-        <div class="my-4 subtitle-1">
-          <strong>Type</strong> • {{ item.type }}
-        </div>
-      </v-row>
-    </v-card-text>
+    <render-types :type="item.type"></render-types>
 
     <v-divider class="mx-4"></v-divider>
 
@@ -19,16 +13,17 @@
 </template>
 
 <script>
-import { RenderChips } from "../molecules";
+import { RenderChips, RenderTypes } from "../molecules";
 
 export default {
-  components: { RenderChips },
+  components: { RenderChips, RenderTypes },
   name: "ProductCard",
   props: {
     /**
-     * The content that helps customize btn-group
-     * @property: path, title, icon
+     * The content that helps render products in a nice-looking card
+     * @property: title, tags, body_html, id, image, type
      */
+
     item: {
       type: Object,
       default() {
