@@ -1,0 +1,43 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`LogoGroup should render a logo group with props given 1`] = `
+<div
+  class="d-flex align-center"
+>
+  <v-img
+    alt="Toolio Logo"
+    class="shrink mr-2"
+    contain=""
+    src="https://uploads-ssl.webflow.com/5d7ab80fa9740ce01c57ee9d/5f2978019586604c1c53aa87_toolio-icon-64.svg"
+    transition="scale-transition"
+    width="40"
+  />
+   
+  <h1>
+    
+    Toolio
+  
+  </h1>
+</div>
+`;
+
+exports[`LogoGroup should render a logo group with props given 2`] = `
+<div
+  class="d-flex align-center"
+>
+  <v-img
+    alt="Coolio Logo"
+    class="shrink mr-2"
+    contain=""
+    src=""
+    transition="scale-transition"
+    width="40"
+  />
+   
+  <h1>
+    
+    Coolio
+  
+  </h1>
+</div>
+`;
