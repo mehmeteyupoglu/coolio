@@ -13,7 +13,11 @@
 
         <custom-spinner :loading="loading"></custom-spinner>
       </v-col>
-
+    </v-row>
+    <v-row
+      class="d-flex justify-center
+    "
+    >
       <product-card
         v-for="(item, i) in data"
         :item="item"
