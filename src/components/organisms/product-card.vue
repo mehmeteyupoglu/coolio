@@ -14,20 +14,15 @@
 
     <v-divider class="mx-4"></v-divider>
 
-    <v-card-title>Tags</v-card-title>
-
-    <v-card-text>
-      <v-chip-group active-class="deep-purple accent-4 white--text" column>
-        <v-chip v-for="tag in item.tags.split(', ')" :key="tag" active>{{
-          tag
-        }}</v-chip>
-      </v-chip-group>
-    </v-card-text>
+    <render-chips :tags="item.tags"></render-chips>
   </v-card>
 </template>
 
 <script>
+import { RenderChips } from "../molecules";
+
 export default {
+  components: { RenderChips },
   name: "ProductCard",
   props: {
     /**
