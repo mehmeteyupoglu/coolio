@@ -34,22 +34,18 @@ Make sure you have json-server installed on your computer globally
 
 ```
 npm install -g json-server
-
 ```
 
 ## Vue project setup
 
 ```
 yarn install
-
 ```
 
 ### Compiles and hot-reloads for development
 
 ```
-
 yarn serve
-
 ```
 
 ### Run your mock backend
@@ -61,7 +57,5 @@ json-server --watch db.json
 ### Run your unit tests
 
 ```
-
 yarn test:unit
-
 ```
