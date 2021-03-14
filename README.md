@@ -1,6 +1,6 @@
 # Coolio
 
-Coolio is a cool small weekend project with a cool name. It basically searches for keywords and retrives data from mock backend. Vue.js and it's ecosystem has been adopted on the client side while [json-server](https://github.com/typicode/json-server) is exploited as a server. For the whole list of packages used in the project, please checkout [package.json](https://github.com/mehmeteyupoglu/coolio/blob/main/package.json).
+Coolio is a cool small weekend project with a cool name. It basically searches for keywords and retrives data from mock backend. Vue.js and it's ecosystem has been adopted on the client side while [json-server](https://github.com/typicode/json-server) is exploited as a mock server. For the whole list of packages used in the project, please checkout [package.json](https://github.com/mehmeteyupoglu/coolio/blob/main/package.json).
 
 ## Principles, Docs and Methodologies
 
