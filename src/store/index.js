@@ -55,5 +55,9 @@ export default new Vuex.Store({
       }
     },
   },
+
+  /**
+   * !!! No need for modules as all the state belongs to the same domain
+   */
   modules: {},
 });
