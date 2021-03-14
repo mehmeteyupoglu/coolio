@@ -19,7 +19,7 @@
  * Streamline solution for handling async search activities
  * @component
  * @example
- * <search-input />
+ * <search-input></search-input>
  */
 
 export default {
