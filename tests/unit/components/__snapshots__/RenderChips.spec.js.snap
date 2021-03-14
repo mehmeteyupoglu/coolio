@@ -1,0 +1,43 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`RenderChips should render chips with the props given 1`] = `
+<div>
+  <v-card-title>
+    Tags
+  </v-card-title>
+   
+  <v-card-text>
+    <v-chip-group
+      active-class="deep-purple accent-4 white--text"
+      column=""
+    >
+      <v-chip
+        active=""
+      >
+        Toolio is so cool
+      </v-chip>
+    </v-chip-group>
+  </v-card-text>
+</div>
+`;
+
+exports[`RenderChips should render chips with the props given 2`] = `
+<div>
+  <v-card-title>
+    Tags
+  </v-card-title>
+   
+  <v-card-text>
+    <v-chip-group
+      active-class="deep-purple accent-4 white--text"
+      column=""
+    >
+      <v-chip
+        active=""
+      >
+        
+      </v-chip>
+    </v-chip-group>
+  </v-card-text>
+</div>
+`;
