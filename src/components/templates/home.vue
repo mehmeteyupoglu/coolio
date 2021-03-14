@@ -96,7 +96,6 @@ export default {
   },
   mounted() {
     this.snackbarTimeout();
-    console;
   },
 };
 </script>
