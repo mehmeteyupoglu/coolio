@@ -1,8 +1,6 @@
 <template>
   <v-card class="mx-3 my-5" max-width="374">
-    <v-img height="250" :src="item.image"></v-img>
-
-    <v-card-title>{{ item.title }}</v-card-title>
+    <render-header :image="item.image" :title="item.title"></render-header>
 
     <render-types :type="item.type"></render-types>
 
@@ -13,10 +11,10 @@
 </template>
 
 <script>
-import { RenderChips, RenderTypes } from "../molecules";
+import { RenderChips, RenderTypes, RenderHeader } from "../molecules";
 
 export default {
-  components: { RenderChips, RenderTypes },
+  components: { RenderChips, RenderTypes, RenderHeader },
   name: "ProductCard",
   props: {
     /**
