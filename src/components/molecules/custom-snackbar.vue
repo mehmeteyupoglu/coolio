@@ -32,7 +32,7 @@ export default {
         return {
           timeout: "-1",
           model: false,
-          text: "Don't forget to read",
+          text: "Don't forget to read the",
           path: "/",
           strong: "documentation",
         };
