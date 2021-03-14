@@ -34,7 +34,7 @@
  */
 
 // import packages
-import { mapGetters, mapMutations } from "vuex";
+import { mapGetters } from "vuex";
 
 // import local files
 import { SearchInput, CustomSpinner } from "../atoms";
@@ -92,7 +92,6 @@ export default {
         this.snackbar = false;
       }, 7000);
     },
-    ...mapMutations(["setFilteredData"]),
   },
   mounted() {
     this.snackbarTimeout();
