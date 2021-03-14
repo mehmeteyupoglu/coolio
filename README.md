@@ -25,6 +25,7 @@ The project was created within a couple days. For the detailed timeline of the d
 | March 14, 2021 12:00-15.00am |   Encapsulate components, add snackbar, unit tests    |
 | March 14, 2021 15:30-18.00am |      Render products, more styling and fix docs       |
 | March 14, 2021 19:00-20.00am |                   Write unit tests                    |
+| March 14, 2021 21:45-22.30am |                 Finalize the project                  |
 
 ## Project setup
 
