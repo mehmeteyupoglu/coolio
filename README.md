@@ -36,7 +36,7 @@ Make sure you have json-server installed on your computer globally
 npm install -g json-server
 ```
 
-## Vue project setup
+### Vue project setup
 
 ```
 yarn install
