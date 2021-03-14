@@ -7,8 +7,6 @@
     <v-main>
       <home />
     </v-main>
-
-    <!-- TODO: Add a footer here -->
   </v-app>
 </template>
 
