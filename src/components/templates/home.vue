@@ -2,13 +2,13 @@
   <v-container>
     <custom-snackbar :content="snackbarContent"></custom-snackbar>
 
-    <v-row class="text-center align-items-center mt-2">
-      <v-col class="mt-10 mb-4">
-        <h3 class="button font-weight-bold mb-1">
+    <v-row class="text-center align-items-center ">
+      <v-col class="mt-5">
+        <h3 class="button font-weight-bold">
           Search for hundreds of items...
         </h3>
       </v-col>
-      <v-col class="mb-2" cols="12">
+      <v-col cols="12">
         <search-input></search-input>
 
         <custom-spinner :loading="loading"></custom-spinner>
