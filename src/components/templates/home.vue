@@ -1,16 +1,6 @@
 <template>
   <v-container>
-    <v-snackbar top dark v-model="snackbar" timeout="-1"
-      >Don't forget to read
-      <v-btn
-        text
-        :href="path"
-        target="_blank"
-        class="subtitle-2 mx-0 px-1 py-0 my-0"
-      >
-        <strong>documentation</strong></v-btn
-      >
-    </v-snackbar>
+    <custom-snackbar :content="snackbarContent"></custom-snackbar>
 
     <v-row class="text-center align-items-center mt-2">
       <v-col class="mt-10 mb-4">
@@ -38,11 +28,13 @@ import { mapGetters } from "vuex";
 
 // import local files
 import { SearchInput, CustomSpinner } from "../atoms";
+import { CustomSnackbar } from "../molecules";
 
 export default {
   components: {
     SearchInput,
     CustomSpinner,
+    CustomSnackbar,
   },
   name: "Home",
 
@@ -52,6 +44,14 @@ export default {
   }),
   computed: {
     ...mapGetters({ loading: "getLoadingState" }),
+    snackbarContent() {
+      return {
+        model: this.snackbar,
+        text: "Don't forget to read",
+        path: "https://github.com/mehmeteyupoglu/coolio/blob/main/README.md",
+        strong: "documentation",
+      };
+    },
   },
   methods: {
     /**
