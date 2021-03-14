@@ -1,8 +1,11 @@
 import Vue from "vue";
 import Vuex from "vuex";
 import { ProductService } from "../service";
+import { UtilityFunctions } from "../utils";
 
 Vue.use(Vuex);
+
+const mapProducts = UtilityFunctions.mapProducts;
 
 export default new Vuex.Store({
   state: {
@@ -16,8 +19,8 @@ export default new Vuex.Store({
       state.title = payload;
     },
     setFilteredData(state, payload) {
-      // TODO: map incoming data
-      state.filteredData = payload;
+      // map products and insert in the state to avoid huge property burden
+      state.filteredData = mapProducts(payload.data);
     },
     setLoadingState(state, payload) {
       state.loadingState = payload;
