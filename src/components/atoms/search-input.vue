@@ -38,7 +38,10 @@ export default {
   },
   watch: {
     title() {
-      this.$store.dispatch("loadProducts");
+      // this makes sure that the data is not fetched when the title is an empty string
+      if (this.title !== "") {
+        this.$store.dispatch("loadProducts");
+      }
     },
   },
 };

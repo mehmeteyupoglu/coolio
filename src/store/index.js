@@ -25,6 +25,10 @@ export default new Vuex.Store({
     setLoadingState(state, payload) {
       state.loadingState = payload;
     },
+    resetFilterData(state) {
+      alert("this works");
+      state.filteredData = [];
+    },
   },
   getters: {
     getTitle(state) {

@@ -30,7 +30,7 @@
  */
 
 // import packages
-import { mapGetters } from "vuex";
+import { mapGetters, mapMutations } from "vuex";
 
 // import local files
 import { SearchInput, CustomSpinner } from "../atoms";
@@ -51,7 +51,11 @@ export default {
     path: "https://github.com/mehmeteyupoglu/coolio/blob/main/README.md",
   }),
   computed: {
-    ...mapGetters({ loading: "getLoadingState", data: "getFilteredData" }),
+    ...mapGetters({
+      loading: "getLoadingState",
+      data: "getFilteredData",
+      title: "getTitle",
+    }),
     snackbarContent() {
       return {
         model: this.snackbar,
@@ -59,6 +63,14 @@ export default {
         path: "https://github.com/mehmeteyupoglu/coolio/blob/main/README.md",
         strong: "documentation",
       };
+    },
+  },
+  watch: {
+    title() {
+      // resets filtered data when the title is an empty string
+      if (this.title === "") {
+        this.$store.commit("resetFilterData");
+      }
     },
   },
   methods: {
@@ -76,9 +88,11 @@ export default {
         this.snackbar = false;
       }, 7000);
     },
+    ...mapMutations(["setFilteredData"]),
   },
   mounted() {
     this.snackbarTimeout();
+    console;
   },
 };
 </script>
