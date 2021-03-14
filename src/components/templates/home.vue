@@ -14,7 +14,11 @@
         <custom-spinner :loading="loading"></custom-spinner>
       </v-col>
 
-      <product-card v-for="(item, i) in data" :key="i"></product-card>
+      <product-card
+        v-for="(item, i) in data"
+        :item="item"
+        :key="i"
+      ></product-card>
     </v-row>
   </v-container>
 </template>
