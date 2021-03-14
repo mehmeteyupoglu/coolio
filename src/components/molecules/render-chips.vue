@@ -13,8 +13,8 @@
 
 <script>
 /**
- * A @component that produces a snackbar with additional functionality
- * accepts an array of tags
+ * A @component that renders tags in a vuetify chips
+ * accepts an string of tags
  * @example <render-chips :tags="tags"></render-chips>
  */
 
