@@ -20,7 +20,7 @@ describe("CustomBtnGroup", () => {
     expect(wrapper.element).toMatchSnapshot();
   });
 
-  it("renders a message and responds correctly to user input", () => {
+  it("renders a props given correctly", () => {
     const wrapper = mount(CustomBtnGroup, {
       propsData: {
         content: {
@@ -37,7 +37,7 @@ describe("CustomBtnGroup", () => {
     expect(wrapper.props().content.icon).toBe("###");
   });
 
-  it("renders a message and responds correctly to user input", () => {
+  it("renders a props given correctly", () => {
     const wrapper = mount(CustomBtnGroup, {
       propsData: {
         content: {
