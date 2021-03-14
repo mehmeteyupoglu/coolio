@@ -1,0 +1,19 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CustomBtnGroup renders a message and responds correctly to user input 1`] = `
+<v-btn
+  href="https://www.toolio.com"
+  target="_blank"
+  text=""
+>
+  <span
+    class="mr-2"
+  >
+    Visit the actual page
+  </span>
+   
+  <v-icon>
+    mdi-open-in-new
+  </v-icon>
+</v-btn>
+`;
