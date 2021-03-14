@@ -1,0 +1,12 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CustomSpinner should render to a snapshot when loading state is false 1`] = `<!---->`;
+
+exports[`CustomSpinner should render to a snapshot when loading state is null 1`] = `<!---->`;
+
+exports[`CustomSpinner should render to a snapshot when loading state is true 1`] = `
+<v-progress-circular
+  color="primary"
+  width="1"
+/>
+`;
