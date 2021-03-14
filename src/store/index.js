@@ -26,7 +26,6 @@ export default new Vuex.Store({
       state.loadingState = payload;
     },
     resetFilterData(state) {
-      alert("this works");
       state.filteredData = [];
     },
   },
