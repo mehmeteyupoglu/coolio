@@ -24,8 +24,6 @@ export default {
     CustomAppBar,
   },
 
-  data: () => ({
-    //
-  }),
+  data: () => ({}),
 };
 </script>
