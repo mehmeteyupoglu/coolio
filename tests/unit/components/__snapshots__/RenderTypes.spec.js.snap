@@ -1,0 +1,37 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`RenderTypes should render types with the props given 1`] = `
+<v-card-text>
+  <v-row
+    align="center"
+    class="mx-0"
+  >
+    <div
+      class="my-4 subtitle-1"
+    >
+      <strong>
+        Type
+      </strong>
+       • Toolio is so cool
+    </div>
+  </v-row>
+</v-card-text>
+`;
+
+exports[`RenderTypes should render types with the props given 2`] = `
+<v-card-text>
+  <v-row
+    align="center"
+    class="mx-0"
+  >
+    <div
+      class="my-4 subtitle-1"
+    >
+      <strong>
+        Type
+      </strong>
+       • 
+    </div>
+  </v-row>
+</v-card-text>
+`;
