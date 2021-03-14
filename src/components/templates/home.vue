@@ -2,7 +2,12 @@
   <v-container>
     <v-snackbar top dark v-model="snackbar" timeout="-1"
       >Don't forget to read
-      <v-btn text :href="path" target="_blank" class="subtitle-2">
+      <v-btn
+        text
+        :href="path"
+        target="_blank"
+        class="subtitle-2 mx-0 px-1 py-0 my-0"
+      >
         <strong>documentation</strong></v-btn
       >
     </v-snackbar>
@@ -14,12 +19,9 @@
         </h3>
       </v-col>
       <v-col class="mb-2" cols="12">
-        <search-input />
-        <v-progress-circular
-          v-if="loading"
-          :width="1"
-          color="primary"
-        ></v-progress-circular>
+        <search-input></search-input>
+
+        <custom-spinner :loading="loading"></custom-spinner>
       </v-col>
     </v-row>
   </v-container>
@@ -35,11 +37,12 @@
 import { mapGetters } from "vuex";
 
 // import local files
-import { SearchInput } from "../atoms";
+import { SearchInput, CustomSpinner } from "../atoms";
 
 export default {
   components: {
     SearchInput,
+    CustomSpinner,
   },
   name: "Home",
 
