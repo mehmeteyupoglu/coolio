@@ -13,6 +13,8 @@
 
         <custom-spinner :loading="loading"></custom-spinner>
       </v-col>
+
+      <product-card v-for="(item, i) in data" :key="i"></product-card>
     </v-row>
   </v-container>
 </template>
@@ -29,12 +31,14 @@ import { mapGetters } from "vuex";
 // import local files
 import { SearchInput, CustomSpinner } from "../atoms";
 import { CustomSnackbar } from "../molecules";
+import { ProductCard } from "../organisms";
 
 export default {
   components: {
     SearchInput,
     CustomSpinner,
     CustomSnackbar,
+    ProductCard,
   },
   name: "Home",
 
@@ -43,7 +47,7 @@ export default {
     path: "https://github.com/mehmeteyupoglu/coolio/blob/main/README.md",
   }),
   computed: {
-    ...mapGetters({ loading: "getLoadingState" }),
+    ...mapGetters({ loading: "getLoadingState", data: "getFilteredData" }),
     snackbarContent() {
       return {
         model: this.snackbar,

@@ -16,6 +16,7 @@ export default new Vuex.Store({
       state.title = payload;
     },
     setFilteredData(state, payload) {
+      // TODO: map incoming data
       state.filteredData = payload;
     },
     setLoadingState(state, payload) {
@@ -28,6 +29,9 @@ export default new Vuex.Store({
     },
     getLoadingState(state) {
       return state.loadingState;
+    },
+    getFilteredData(state) {
+      return state.filteredData;
     },
   },
   actions: {
